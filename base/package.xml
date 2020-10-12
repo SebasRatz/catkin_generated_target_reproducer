@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package format="2">
+  <name>base_msgs</name>
+  <version>0.0.0</version>
+  <description>Custom base messages.</description>
+  <maintainer email="nobody@nowhere.ch">Some developers</maintainer>
+  <license>Closed</license>
+
+  <build_depend>catkin</build_depend>
+  <build_depend>catkin_simple</build_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <depend>std_msgs</depend>
+</package>

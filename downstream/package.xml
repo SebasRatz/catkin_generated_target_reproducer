@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package format="2">
+  <name>pkg_downstream</name>
+  <version>0.0.0</version>
+  <description>Custom intermediate package.</description>
+  <maintainer email="nobody@nowhere.ch">Some developers</maintainer>
+  <license>Closed</license>
+
+  <build_depend>catkin</build_depend>
+  <build_depend>catkin_simple</build_depend>
+
+  <depend>pkg_a</depend>
+  <depend>pkg_b</depend>
+  <depend>pkg_c</depend>
+</package>
