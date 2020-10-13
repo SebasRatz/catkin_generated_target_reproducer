@@ -7,7 +7,6 @@
   <license>Closed</license>
 
   <build_depend>catkin</build_depend>
-  <build_depend>catkin_simple</build_depend>
 
   <depend>pkg_downstream</depend>
 </package>

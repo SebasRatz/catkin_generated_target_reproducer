@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 project(pkg_app)
 
-find_package(catkin_simple REQUIRED)
-catkin_simple(ALL_DEPS_REQUIRED)
+find_package(catkin)
+find_package(pkg_downstream)
 
-cs_add_library(${PROJECT_NAME} src/empty.cc)
+catkin_package(CATKIN_DEPENDS pkg_downstream
+        LIBRARIES ${PROJECT_NAME})
 
-cs_install()
-cs_export()
+add_library(${PROJECT_NAME} src/empty.cc)
+add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
